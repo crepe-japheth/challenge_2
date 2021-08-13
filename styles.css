@@ -1,0 +1,141 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+
+}
+header{
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    margin-top: 50px;
+}
+main{
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    margin-top: 10px;
+}
+main>h1, h5{
+    font-family: libre Franklin;
+    font-weight: 600;
+    color: hsl(0, 0%, 59%);
+    margin-top: 10px;
+}
+main>h1>span{
+    font-weight: 700;
+    color: black;
+}
+form{
+    margin-top: 10px;
+}
+form>input[type=email]{
+    width: 20%;
+    height: 30px;
+    border: 1px solid hsl(0, 0%, 59%);
+    border-radius: 50px;
+}
+form>input[type=submit]{
+    width: 70px;
+    height: 30px;
+    border: 1px solid hsl(0, 0%, 59%);
+    border-radius: 50px;
+    background-color: hsl(223, 87%, 63%);
+    cursor: pointer;
+}
+form>input[type=submit]:hover{
+    background-color: hsl(210, 54%, 71%);
+}
+main>img{
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    max-width: 30%;
+    margin-top: 20px;
+}
+footer{
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    margin-top: 50px;
+}
+.social_icon{
+    margin-bottom: 20px;
+}
+.logo_icon{
+    color: hsl(223, 87%, 63%);
+    cursor: pointer;
+}
+.logo_icon:hover{
+    background-color: hsl(209, 33%, 12%);
+}
+
+/*responsive style guide*/
+@media only screen and (max-width: 730px) {
+    main>h1, h5{
+        font-weight: 500;
+       font-size: 30px;
+    }
+    main>h5{
+        font-weight: 500;
+       font-size: 20px;
+    }
+    main>img{
+        max-width: 50%;
+    }
+    form>input[type=email]{
+        width: 40%;
+        height: 40px;
+    }
+    form>input[type=submit]{
+        width: 10%;
+        height: 40px;
+    }
+  }
+  @media only screen and (max-width: 550px) {
+    main>h1, h5{
+        font-weight: 500;
+       font-size: 40px;
+    }
+    main>h5{
+        font-weight: 500;
+       font-size: 20px;
+    }
+    main>img{
+        max-width: 50%;
+    }
+    form>input[type=email]{
+        width: 40%;
+        height: 40px;
+    }
+    form>input[type=submit]{
+        width: 20%;
+        height: 40px;
+    }
+  }
+
+@media only screen and (max-width: 375px) {
+    header{
+        font-size: large;
+    }
+    main>h1, h5{
+        font-weight: 300;
+       font-size: medium;
+    }
+    form{
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    form>input[type=email]{
+        width: 50%;
+        height: 40px;
+        margin-bottom: 10px;
+    }
+    form>input[type=submit]{
+        width: 50%;
+        height: 40px;
+    }
+    main>img{
+        max-width: 50%;
+    }
+  }
